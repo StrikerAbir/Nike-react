@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- tailwind elements -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.1/dist/flowbite.min.css" />
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Roboto', 'sans- serif'],
+                        mono: ['Bebas Neue', 'cursive'],
+
+                    },
+                    colors: {
+                        clifford: '#da373d',
+                        headerbg: '#FFF9F4',
+                        btnClr1:'rgba(61, 79, 243, 1)',
+                        btnClr2:'rgba(53, 67, 188, 1)',
+                    }
+                }
+            }
+        }
+    </script>
+  
+</head>
+<body>
+    <header class="bg-headerbg ">
+        <!-- navBar -->
+        <nav class="bg-headerbg border-gray-200 px-2 sm:px-4 py-2.5 rounded w-full fixed">
+            <div class="container flex flex-wrap justify-between items-center mx-auto ">
+                <a href="#" class="flex items-center">
+                    <img src="icons/Logo.png" class="mr-3 h-6 sm:h-9" alt="Logo">
+                </a>
+                <button data-collapse-toggle="navbar-default" type="button"
+                    class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden"
+                    aria-controls="navbar-default" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+                <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                    <ul
+                        class="flex flex-col p-4 mt-4  rounded-lg border-4 border-gray-200 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0  ">
+                        <li>
+                            <a href="#"
+                                class="block py-2 pr-4 pl-3 md:p-0 hover:text-gray-400"
+                                aria-current="page">Home</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 pr-4 pl-3  md:p-0 hover:text-gray-400">Products</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 pr-4 pl-3  md:p-0 hover:text-gray-400">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 pr-4 pl-3  md:p-0 hover:text-gray-400">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <section class=" container mx-auto px-2 sm:px-4 py-24 flex jusitfy-center items-center ">
+            <div class="flex justify-center itemn-center">
+                <img class="w-1/2" src="images/Group 33092.png" alt="">
+            </div>
+            
+            <div class="space-y-6">
+                <h2 class="font-mono text-7xl "><span class="block text-orange-400">NIKE REACT</span>INFINITY RUN2</h2>
+                <p class>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ipsam minima culpa molestias unde cum quia, dicta veniam fugit aut!</p>
+                <button class="bg-gradient-to-t from-btnClr1 to-btnClr2  text-white rounded-xl py-4 px-7 flex uppercase font-bold">
+                    <img class="h-6 w-6 mr-2" src="icons/shopping-cart 1.png" alt="">Buy Now
+                </button>
+            </div>
+        </section>
+
+        
+    </header>
+    
+    <main>
+        <section class="container mx-auto px-2 sm:px-4 py-24">
+            <h3 class="uppercase font-mono text-5xl pb-7">Casual Shoes</h3>
+            <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-7 ">
+                <!-- shoes -->
+                <div class="p-4 shadow-xl rounded-xl space-y-4">
+                    <div class="p-5 bg-slate-100 rounded-xl">
+                        <img src="images/Daco_1703273 1.png" alt="">
+                    </div>
+                    <div  class="space-y-2">
+                        <h4 class="text-4xl font-semibold">Nike shoe</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, perferendis fuga voluptate blanditiis mollitia
+                            dolorem soluta harum veniam repellendus id!</p>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <h2 class="text-3xl font-semibold">$234</h2>
+                        <button
+                            class="bg-gradient-to-t from-btnClr1 to-btnClr2  text-white rounded-xl py-4 px-7 flex uppercase font-bold">
+                            <img class="h-6 w-6 mr-2" src="icons/shopping-cart 1.png" alt="">Buy Now </button>
+                    </div>
+                </div>
+                <div class="p-4 shadow-xl rounded-xl space-y-4">
+                    <div class="p-5 bg-slate-100 rounded-xl">
+                        <img src="images/Daco_1703273 1.png" alt="">
+                    </div>
+                    <div  class="space-y-2">
+                        <h4 class="text-4xl font-semibold">Nike shoe</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, perferendis fuga voluptate blanditiis mollitia
+                            dolorem soluta harum veniam repellendus id!</p>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <h2 class="text-3xl font-semibold">$234</h2>
+                        <button
+                            class="bg-gradient-to-t from-btnClr1 to-btnClr2  text-white rounded-xl py-4 px-7 flex uppercase font-bold">
+                            <img class="h-6 w-6 mr-2" src="icons/shopping-cart 1.png" alt="">Buy Now </button>
+                    </div>
+                </div>
+                <div class="p-4 shadow-xl rounded-xl space-y-4">
+                    <div class="p-5 bg-slate-100 rounded-xl">
+                        <img src="images/Daco_1703273 1.png" alt="">
+                    </div>
+                    <div  class="space-y-2">
+                        <h4 class="text-4xl font-semibold">Nike shoe</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, perferendis fuga voluptate blanditiis mollitia
+                            dolorem soluta harum veniam repellendus id!</p>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <h2 class="text-3xl font-semibold">$234</h2>
+                        <button
+                            class="bg-gradient-to-t from-btnClr1 to-btnClr2  text-white rounded-xl py-4 px-7 flex uppercase font-bold">
+                            <img class="h-6 w-6 mr-2" src="icons/shopping-cart 1.png" alt="">Buy Now </button>
+                    </div>
+                </div>
+                <div class="p-4 shadow-xl rounded-xl space-y-4">
+                    <div class="p-5 bg-slate-100 rounded-xl">
+                        <img src="images/Daco_1703273 1.png" alt="">
+                    </div>
+                    <div  class="space-y-2">
+                        <h4 class="text-4xl font-semibold">Nike shoe</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, perferendis fuga voluptate blanditiis mollitia
+                            dolorem soluta harum veniam repellendus id!</p>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <h2 class="text-3xl font-semibold">$234</h2>
+                        <button
+                            class="bg-gradient-to-t from-btnClr1 to-btnClr2  text-white rounded-xl py-4 px-7 flex uppercase font-bold">
+                            <img class="h-6 w-6 mr-2" src="icons/shopping-cart 1.png" alt="">Buy Now </button>
+                    </div>
+                </div>
+                <div class="p-4 shadow-xl rounded-xl space-y-4">
+                    <div class="p-5 bg-slate-100 rounded-xl">
+                        <img src="images/Daco_1703273 1.png" alt="">
+                    </div>
+                    <div  class="space-y-2">
+                        <h4 class="text-4xl font-semibold">Nike shoe</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, perferendis fuga voluptate blanditiis mollitia
+                            dolorem soluta harum veniam repellendus id!</p>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <h2 class="text-3xl font-semibold">$234</h2>
+                        <button
+                            class="bg-gradient-to-t from-btnClr1 to-btnClr2  text-white rounded-xl py-4 px-7 flex uppercase font-bold">
+                            <img class="h-6 w-6 mr-2" src="icons/shopping-cart 1.png" alt="">Buy Now </button>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        
+    </main>
+
+
+    <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+</body>
+</html>
